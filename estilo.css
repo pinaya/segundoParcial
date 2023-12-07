@@ -1,0 +1,288 @@
+:root {
+    --color-primario: #309AB7;  /* Azul principal */
+    --color-secundario: #61B7CF;  /* Azul claro */
+    --color-terciario: #1E6376;  /* Azul oscuro */
+    --color-destacado: #E9841E;  /* Naranja */
+    --color-fondo: #F4F4F4;  /* Fondo gris claro */
+    --color-texto: #333;  /* Texto principal */
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #F4F4F4;
+    color:#333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav li {
+    margin-right: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 10px;
+    }
+
+    .nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+
+
+.top-bar {
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+.dropdown {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.dropbtn {
+    background-color: #ddd;
+    color: #333;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.search-bar {
+    text-align: right;
+}
+
+.search-bar input {
+    padding: 8px;
+}
+
+.search-bar button {
+    padding: 8px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.content-container {
+    display: flex;
+}
+
+.sidebar {
+    width: 30%;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 10px 0;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: #ddd;
+}
+
+.imagen {
+    width: 70%;
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+}
+
+.responsive-menu {
+    text-align: center;
+    background-color: #ddd;
+    padding: 10px;
+}
+
+.responsive-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.responsive-menu li {
+    margin-right: 20px;
+}
+
+.responsive-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.main-content {
+    display: flex;
+}
+
+.image-container {
+    width: 30%;
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+}
+
+.additional-content {
+    width: 70%;
+    background-color: #f4f4f4;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.bottom-content-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social-media-section {
+    width: 30%;
+}
+
+.products-section {
+    width: 70%;
+
+}
+
+main {
+    width: 100%;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+
+}
+
+article {
+    width: auto;
+    height: auto;
+    background-color: #309AB7;
+    padding: 2px;
+    margin: 5px;
+    text-align: center;
+
+}
+article button{
+    margin-top: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+article button:hover{
+    background-color: #555;
+}
+
+h5{
+    text-align: center;
+    color:#309AB7;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin: 10px;
+    border-top: 1px solid #1E6376;
+    background-color: #61B7CF;
+    color: #fff;
+}
+#clock {
+    font-size: 24px;
+    color: #1E6376;
+}
+#click-counter {
+    font-size: 24px;
+    color: #333;
+}
